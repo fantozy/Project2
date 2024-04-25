@@ -93,5 +93,6 @@ public class LoginTest extends TestConfiguration {
         loginPageSteps
                 .validateUsernameInputIsEmpty()
                 .validatePasswordInputIsEmpty();
+        System.out.println("Hello world");
     }
 }

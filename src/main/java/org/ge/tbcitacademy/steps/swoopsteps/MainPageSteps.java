@@ -14,6 +14,7 @@ public class MainPageSteps {
 
     @Step("Open Categories Menu")
     public MainPageSteps openCategoriesMenu() {
+        System.out.println("Hello world");
         mainPage.categoriesButton.click();
         return this;
     }
