@@ -129,5 +129,6 @@ public class OffersTest extends TestConfiguration {
                 .validatePriceRangeIsDefault()
                 .validatePaymentMethodIsDefault(softAssert);
         softAssert.assertAll();
+        System.out.println("Helouuuu rogor daisvenet aba moyevit");
     }
 }
