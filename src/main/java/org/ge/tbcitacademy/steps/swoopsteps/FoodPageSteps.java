@@ -20,7 +20,6 @@ public class FoodPageSteps {
 
     @Step("Check if Vouchers are Not Fully Sold")
     public FoodPageSteps checkVouchersNotSold(SoftAssert softAssert) {
-        System.out.println("Hello world");
         String soldVoucherPercentage = foodPage.firstOfferVoucher.getAttribute("data-width");
         double parsedVoucherPercentage = HelperFunction.parseToDouble(soldVoucherPercentage);
         softAssert.assertTrue(parsedVoucherPercentage < 100.0, VOUCHERS_NOT_SOLD);
